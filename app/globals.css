@@ -2,11 +2,15 @@
 
 @theme {
   --font-primary: Inter, sans-serif;
+  --color-secondaryBg: #66abbd;
+  --color-primaryBg: #35565e;
+  --color-primaryText: #edf1f5;
+  --color-secondaryText: #ffdd36;
 }
 
 /*these styles will be applied to EVERYTHING by default*/
 @layer base {
   body {
-    @apply text-xl font-primary;
+    @apply text-xl font-primary bg-primaryBg text-primaryText;
   }
 }
