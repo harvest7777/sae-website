@@ -5,7 +5,7 @@
   --color-secondaryBg: #66abbd;
   --color-primaryBg: #35565e;
   --color-primaryText: #edf1f5;
-  --color-secondaryText: #ffdd36;
+  --color-secondaryText: #ffd412;
 }
 
 /*these styles will be applied to EVERYTHING by default*/
@@ -13,4 +13,18 @@
   body {
     @apply text-xl font-primary bg-primaryBg text-primaryText;
   }
+
+  .navlink {
+    @apply relative inline-block hover:cursor-pointer;
+  }
+
+  .navlink::before {
+    content: '';
+    @apply absolute bottom-0 left-0 block h-0.5 w-0 bg-primaryBg transition-all duration-300 ease-in-out;
+  }
+
+  .navlink:hover::before {
+    @apply w-full;
+  }
+
 }
