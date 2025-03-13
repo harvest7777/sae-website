@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Navbar() {
   return (
@@ -12,10 +13,10 @@ export default function Navbar() {
 
       {/* container for all the links  */}
       <nav className="flex space-x-10 px-8 font-semibold">
-        <a href="/" className="navlink">About Us</a>
-        <a href="/sponsors" className="navlink text-secondaryText">Sponsors 💖</a>
-        <a href="/socials" className="navlink">Socials</a>
-        <a className="navlink">Contact</a>
+        <Link href="/" className="navlink">About Us</Link>
+        <Link href="/sponsors" className="navlink text-secondaryText">Sponsors 💖</Link>
+        <Link href="/socials" className="navlink">Socials</Link>
+        <Link href="/" className="navlink">Contact</Link>
       </nav>
     </div>
   )
