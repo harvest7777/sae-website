@@ -1,6 +1,6 @@
 interface ButtonProps {
-  "name": String;
-  "className"?: String;
+  "name": string;
+  "className"?: string;
 }
 const Button: React.FC<ButtonProps> = ({ name, className }) => {
   return (
