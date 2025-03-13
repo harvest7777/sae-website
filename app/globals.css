@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-primary: Inter, sans-serif;
+  --font-secondary: 'Jersey 20', sans-serif;
   --color-secondaryBg: #66abbd;
   --color-primaryBg: #35565e;
   --color-primaryText: #edf1f5;
@@ -12,6 +14,15 @@
 @layer base {
   body {
     @apply text-xl font-primary bg-primaryBg text-primaryText;
+  }
+
+  .header-text {
+    @apply text-5xl text-center font-secondary font-bold
+  }
+
+  .clickable-animation {
+    @apply hover:cursor-pointer transition-transform duration-200 ease-in-out hover:scale-105 active:scale-95;
+
   }
 
   .navlink {
