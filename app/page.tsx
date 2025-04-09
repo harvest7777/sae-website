@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Home() {
   return (
-    <div className="relative w-full h-screen flex items-center justify-center">
+    <div className="absolute top-0 left-0 w-full h-screen flex items-center justify-center">
       <Image
         className="absolute"
         fill
