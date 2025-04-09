@@ -2,7 +2,7 @@ import SocialWidget from "./_components/SocialWidget"
 
 export default function SocialsPage() {
   return (
-    <div className="mt-32 space-y-20">
+    <div className="space-y-20">
       <h1 className="header-text">Follow for our progress and events!</h1>
       <div className="flex space-x-10 justify-center ">
         <SocialWidget socialName="Instagram" socialLink="https://www.instagram.com/csulb_sae/" backgroundImageUrl="/instagram.png" />
