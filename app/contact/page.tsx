@@ -26,11 +26,14 @@ export default function ContactPage() {
     <div className="space-y-10 flex flex-col items-center align-middle justify-center">
       <h1 className="header-text">Contact Us</h1>
       {/* contact us container */}
-      <div className="w-5/6 flex gap-x-10 items-center">
-        <div className="w-2/3">
-          <span>Want to become a sponsor? Got a question? We have many forms of communication! Please contact us through any of our </span>
-          <Link href="/socials" className="underline hover:cursor-pointer">socials</Link>
-          <span> or through the email listed below.</span>
+      <div className="w-5/6 flex md:flex-row flex-col gap-x-10 items-center gap-y-5">
+        <div className="md:w-2/3 md:order-1 order-2 md:text-left text-center flex flex-col md:items-start items-center">
+          {/* text container */}
+          <div>
+            <span>Want to become a sponsor? Got a question? We have many forms of communication! Please contact us through any of our </span>
+            <Link href="/socials" className="underline hover:cursor-pointer">socials</Link>
+            <span> or through the email listed below.</span>
+          </div>
 
           {/* email copy to clipboard container */}
           <div className="mt-5 flex gap-x-3 align-middle items-center outline-2 outline-secondaryBg w-fit p-2 rounded-xl">
@@ -39,7 +42,7 @@ export default function ContactPage() {
             {copied && <GrCheckmark />}
           </div>
         </div>
-        <div className="w-1/3 relative">
+        <div className="md:w-1/3 w-1/2 relative md:order-2 order-1">
           <Image
             className="object-cover h-auto"
             src="/elbee_racing.png"
