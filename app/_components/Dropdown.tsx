@@ -15,6 +15,7 @@ export default function Dropdown() {
       <AnimatePresence>
         {open ?
           <motion.div
+            onClick={() => setOpen(false)}
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -5 }}
