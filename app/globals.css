@@ -16,6 +16,10 @@
     @apply text-xl font-primary bg-primaryBg text-primaryText;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .header-text {
     @apply text-5xl text-center font-secondary font-bold
   }
@@ -37,5 +41,6 @@
   .navlink:hover::before {
     @apply w-full;
   }
+
 
 }
