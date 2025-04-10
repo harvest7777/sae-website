@@ -46,7 +46,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="/elbee_racing.png" />
 
       </Head>
-      <body className="pt-32 p-5">
+      <body className="pt-32 p-5 no-scrollbar select-none">
         <Navbar />
         {children}
       </body>
