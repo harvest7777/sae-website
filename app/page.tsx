@@ -1,4 +1,7 @@
+"use client";
+import { motion } from "motion/react";
 import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="absolute top-0 left-0 w-full h-screen flex items-center justify-center">
@@ -12,13 +15,19 @@ export default function Home() {
           objectFit: "cover",
         }}
       />
-      <Image
-        className="absolute"
-        src="/elbee_racing.png"
-        alt="elbee_racing"
-        width={400}
-        height={400}
-      />
+      {/* make this center image responsive to screen size */}
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="md:w-1/3 w-1/2 aspect-square relative">
+        <Image
+          className="object-cover"
+          src="/elbee_racing.png"
+          alt="elbee_racing"
+          fill
+        />
+      </motion.div>
     </div>
   );
 }
